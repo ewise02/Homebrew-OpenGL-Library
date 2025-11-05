@@ -1,5 +1,6 @@
 #include "loader.h"
 #include <stdio.h>
+#include <Windows.h>
 
 void* load_opengl_func_win32(const char* name) {
 
