@@ -403,7 +403,7 @@ typedef void (APIENTRY *PFNGLSECONDARYCOLOR3FPROC)(GLfloat red, GLfloat green, G
 typedef void (APIENTRY *PFNGLSECONDARYCOLOR3DPROC)(GLdouble red, GLdouble green, GLdouble blue);
 typedef void (APIENTRY *PFNGLSECONDARYCOLOR3UBPROC)(GLubyte red, GLubyte green, GLubyte blue);
 typedef void (APIENTRY *PFNGLSECONDARYCOLOR3USPROC)(GLushort red, GLushort green, GLushort blue);
-typedef void (APIENTRY *PFNGLSECODNARYCOLOR3UIPROC)(GLuint red, GLuint green, GLuint blue);
+typedef void (APIENTRY *PFNGLSECONDARYCOLOR3UIPROC)(GLuint red, GLuint green, GLuint blue);
 typedef void (APIENTRY *PFNGLSECONDARYCOLOR3BVPROC)(const GLbyte *v);
 typedef void (APIENTRY *PFNGLSECONDARYCOLOR3SVPROC)(const GLshort *v);
 typedef void (APIENTRY *PFNGLSECONDARYCOLOR3IVPROC)(const GLint *v);
@@ -464,7 +464,7 @@ typedef void (APIENTRY *PFNGLTEXGENFPROC)(GLenum coord, GLenum pname, GLfloat pa
 typedef void (APIENTRY *PFNGLTEXGENDPROC)(GLenum coord, GLenum pname, GLdouble param);
 typedef void (APIENTRY *PFNGLTEXGENIVPROC)(GLenum coord, GLenum pname, const GLint *params);
 typedef void (APIENTRY *PFNGLTEXGENFVPROC)(GLenum coord, GLenum pname, const GLfloat *params);
-typedef void (APIENTRY *PFNGLTEXGENDVPROC)(GLenum coord, GLenum panem, const GLdouble *params);
+typedef void (APIENTRY *PFNGLTEXGENDVPROC)(GLenum coord, GLenum pname, const GLdouble *params);
 typedef void (APIENTRY *PFNGLTEXIMAGE1DPROC)(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *data);
 typedef void (APIENTRY *PFNGLTEXIMAGE2DPROC)(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *data);
 typedef void (APIENTRY *PFNGLTEXIMAGE3DPROC)(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *data);
