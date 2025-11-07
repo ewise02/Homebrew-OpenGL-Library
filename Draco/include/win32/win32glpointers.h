@@ -562,7 +562,7 @@ typedef void (APIENTRY *PFNGLVERTEXATTRIB4UIVPROC)(GLuint index, const GLuint *v
 typedef void (APIENTRY *PFNGLVERTEXATTRIB4NBVPROC)(GLuint index, const GLbyte *v);
 typedef void (APIENTRY *PFNGLVERTEXATTRIB4NSVPROC)(GLuint index, const GLshort *v);
 typedef void (APIENTRY *PFNGLVERTEXATTRIB4NIVPROC)(GLuint index, const GLint *v);
-typedef void (APIENTRY *PFNGLVERTEXATTRIB4NUBVPROC)(GLuint index, GLubyte *v);
+typedef void (APIENTRY *PFNGLVERTEXATTRIB4NUBVPROC)(GLuint index, const GLubyte *v);
 typedef void (APIENTRY *PFNGLVERTEXATTRIB4NUSVPROC)(GLuint index, const GLushort *v);
 typedef void (APIENTRY *PFNGLVERTEXATTRIB4NUIVPROC)(GLuint index, const GLuint *v);
 typedef void (APIENTRY *PFNGLVERTEXATTRIBPOINTERPROC)(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer);
@@ -649,7 +649,7 @@ typedef void (APIENTRY *PFNGLGETBUFFERPARAMETERI64VPROC)(GLenum target, GLenum v
 typedef void (APIENTRY *PFNGLGETMULTISAMPLEFVPROC)(GLenum pname, GLuint index, GLfloat *val);
 typedef void (APIENTRY *PFNGLGETSYNCIVPROC)(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values);
 typedef GLboolean (APIENTRY *PFNGLISSYNCPROC)(GLsync sync);
-typedef void (APIENTRY *PFNGLMULTIFRAWELEMENTSBASEVERTEXPROC)(GLenum mode, const GLsizei *count, GLenum type, const GLvoid **indices, GLsizei primcount, GLint *basevertex);
+typedef void (APIENTRY *PFNGLMULTIDRAWELEMENTSBASEVERTEXPROC)(GLenum mode, const GLsizei *count, GLenum type, const GLvoid **indices, GLsizei primcount, GLint *basevertex);
 typedef void (APIENTRY *PFNGLPROVOKINGVERTEXPROC)(GLenum provokeMode);
 typedef void (APIENTRY *PFNGLSAMPLEMASKIPROC)(GLuint maskNumber, GLbitfield mask);
 typedef void (APIENTRY *PFNGLTEXIMAGE2DMULTISAMPLEPROC)(GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations);
@@ -683,7 +683,7 @@ typedef void (APIENTRY *PFNGLDRAWTRANSFORMFEEDBACKPROC)(GLenum mode, GLuint id);
 typedef void (APIENTRY *PFNGLDRAWTRANSFORMFEEDBACKSTREAMPROC)(GLenum mode, GLuint id, GLuint stream);
 typedef void (APIENTRY *PFNGLGENTRANSFORMFEEDBACKSPROC)(GLsizei n, GLuint *ids);
 typedef void (APIENTRY *PFNGLGETACTIVESUBROUTINENAMEPROC)(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei *length, GLchar *name);
-typedef void (APIENTRY *PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)(GLuint program, GLenum shadertype, GLuint inndex, GLenum pname, GLint *values);
+typedef void (APIENTRY *PFNGLGETACTIVESUBROUTINEUNIFORMIVPROC)(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint *values);
 typedef void (APIENTRY *PFNGLGETACTIVESUBROUTINEUNIFORMNAMEPROC)(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei *length, GLchar *name);
 typedef void (APIENTRY *PFNGLGETPROGRAMSTAGEIVPROC)(GLuint program, GLenum shadertype, GLenum pname, GLint *values);
 typedef void (APIENTRY *PFNGLGETQUERYINDEXEDIVPROC)(GLenum target, GLuint index, GLenum pname, GLint *params);
@@ -691,7 +691,7 @@ typedef GLuint (APIENTRY *PFNGLGETSUBROUTINEINDEXPROC)(GLuint program, GLenum sh
 typedef GLint (APIENTRY *PFNGLGETSUBROUTINEUNIFORMLOCATIONPROC)(GLuint program, GLenum shadertype, const GLchar *name);
 typedef void (APIENTRY *PFNGLGETUNIFORMSUBROUTINEUIVPROC)(GLenum shadertype, GLint location, GLuint *values);
 typedef GLboolean (APIENTRY *PFNGLISTRANSFORMFEEDBACKPROC)(GLuint id);
-typedef void (APIENTRY *PFNGLMINSAMMPLESHADINGPROC)(GLfloat value);
+typedef void (APIENTRY *PFNGLMINSAMPLESHADINGPROC)(GLfloat value);
 typedef void (APIENTRY *PFNGLPATCHPARAMETERIPROC)(GLenum pname, GLint value);
 typedef void (APIENTRY *PFNGLPATCHPARAMETERFVPROC)(GLenum pname, const GLfloat *values);
 typedef void (APIENTRY *PFNGLPAUSETRANSFORMFEEDBACKPROC)(void);
