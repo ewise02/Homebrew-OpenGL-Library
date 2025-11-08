@@ -8,12 +8,12 @@ LRESULT WINAPI WindowProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
     switch(Msg) {
         case WM_DESTROY: 
             HGLRC hglrc;
-            if(hglrc = wglGetCurrentContext()) {
-            wglMakeCurrent(NULL, NULL);
-            ReleaseDC(hwnd, wglGetCurrentDC());
-            wglDeleteContext(hglrc);
-    }
-            PostQuitMessage(0);
+            if((hglrc = wglGetCurrentContext())) {
+            	wglMakeCurrent(NULL, NULL);
+            	ReleaseDC(hwnd, wglGetCurrentDC());
+            	wglDeleteContext(hglrc);
+    	    }
+            	PostQuitMessage(0);
             return 0;
     }
 
