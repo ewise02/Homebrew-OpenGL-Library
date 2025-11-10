@@ -316,7 +316,6 @@ typedef void (APIENTRY *PFNGLMULTITEXCOORD4IVPROC)(GLenum target, const GLint* v
 typedef void (APIENTRY *PFNGLMULTITEXCOORD4FVPROC)(GLenum target, const GLfloat *v);
 typedef void (APIENTRY *PFNGLMULTITEXCOORD4DVPROC)(GLenum target, const GLdouble *v);
 typedef void (APIENTRY *PFNGLNEWLISTPROC)(GLuint list, GLenum mode);
-typedef void (APIENTRY *PFNGLENDLISTPROC)(void);
 typedef void (APIENTRY *PFNGLNORMAL3BPROC)(GLbyte nx, GLbyte ny, GLbyte nz);
 typedef void (APIENTRY *PFNGLNORMAL3DPROC)(GLdouble nx, GLdouble ny, GLdouble nz);
 typedef void (APIENTRY *PFNGLNORMAL3FPROC)(GLfloat nx, GLfloat ny, GLfloat nz);
@@ -502,7 +501,6 @@ typedef void (APIENTRY *PFNGLUNIFORMMATRIX2X4FVPROC)(GLint location, GLsizei cou
 typedef void (APIENTRY *PFNGLUNIFORMMATRIX4X2FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 typedef void (APIENTRY *PFNGLUNIFORMMATRIX3X4FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 typedef void (APIENTRY *PFNGLUNIFORMMATRIX4X3FVPROC)(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-typedef GLboolean (APIENTRY *PFNGLUNMAPBUFFERPROC)(GLenum target);
 typedef void (APIENTRY *PFNGLUSEPROGRAMPROC)(GLuint program);
 typedef void (APIENTRY *PFNGLVALIDATEPROGRAMPROC)(GLuint program);
 typedef void (APIENTRY *PFNGLVERTEX2SPROC)(GLshort x, GLshort y);

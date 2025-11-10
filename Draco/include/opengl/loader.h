@@ -315,7 +315,6 @@ void glMultiTexCoord4iv(GLenum target, const GLint *v);
 void glMultiTexCoord4fv(GLenum target, const GLfloat *v);
 void glMultiTexCoord4dv(GLenum target, const GLdouble *v);
 void glNewList(GLuint list, GLenum mode);
-void glEndList();
 void glNormal3b(GLbyte nx, GLbyte ny, GLbyte nz);
 void glNormal3d(GLdouble nx, GLdouble ny, GLdouble nz);
 void glNormal3f(GLfloat nx, GLfloat ny, GLfloat nz);
@@ -501,7 +500,6 @@ void glUniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, co
 void glUniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 void glUniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
 void glUniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat *value);
-GLboolean glUnmapBuffer(GLenum target);
 void glUseProgram(GLuint program);
 void glValidateProgram(GLuint program);
 void glVertex2s(GLshort x, GLshort y);
@@ -643,7 +641,6 @@ void glDrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, GLvoid *i
 void glDrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, GLvoid *indices, GLsizei primcount, GLint basevertex);
 void glDrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, GLvoid *indices, GLint basevertex);
 GLsync glFenceSync(GLenum condition, GLbitfield flags);
-void glGetBufferParameteriv(GLenum target, GLenum value, GLint *data);
 void glGetBufferParameteri64v(GLenum target, GLenum value, GLint64 *data);
 void glGetMultisamplefv(GLenum pname, GLuint index, GLfloat *val);
 void glGetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values);
