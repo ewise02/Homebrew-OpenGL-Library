@@ -296,698 +296,1392 @@ void glCompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, G
 static PFNGLCOMPRESSEDTEXSUBIMAGE1DPROC gl_70 = NULL;
 void glCompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
+
+static PFNGLCOMPRESSEDTEXSUBIMAGE2DPROC gl_71 = NULL;
 void glCompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum imageSize, const GLvoid* data) {
 }
+
+static PFNGLCOMPRESSEDTEXSUBIMAGE3DPROC gl_72 = NULL;
 void glCompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid *data) {
 }
+
+static PFNGLCOPYPIXELSPROC gl_73 = NULL;
 void glCopyPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum type) {
 }
+
+static PFNGLCOPYTEXIMAGE1DPROC gl_74 = NULL;
 void glCopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border) {
 }
+
+static PFNGLCOPYTEXIMAGE2DPROC gl_75 = NULL;
 void glCopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border) {
 }
+
+static PFNGLCOPYTEXSUBIMAGE1DPROC gl_76 = NULL;
 void glCopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width) {
 }
+
+static PFNGLCOPYTEXSUBIMAGE2DPROC gl_77 = NULL;
 void glCopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
+
+static PFNGLCOPYTEXSUBIMAGE3DPROC gl_78 = NULL;
 void glCopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height) {
 }
+
+static PFNGLCREATEPROGRAMPROC gl_79 = NULL;
 GLuint glCreateProgram() {
 }
+
+static PFNGLCREATESHADERPROC gl_80 = NULL;
 GLuint glCreateShader(GLenum shaderType) {
 }
+
+static PFNGLCULLFACEPROC gl_81 = NULL;
 void glCullFace(GLenum mode) {
 }
+
+static PFNGLDELETEBUFFERSPROC gl_82 = NULL;
 void glDeleteBuffers(GLsizei n, const GLuint *buffers) {
 }
+
+static PFNGLDELETELISTSPROC gl_83 = NULL;
 void glDeleteLists(GLuint list, GLsizei range) {
 }
+
+static PFNGLDELETEPROGRAMPROC gl_84 = NULL;
 void glDeleteProgram(GLuint program) {
 }
+
+static PFNGLDELETEQUERIESPROC gl_85 = NULL;
 void glDeleteQueries(GLsizei n, const GLuint *ids) {
 }
+
+static PFNGLDELETESHADERPROC gl_86 = NULL;
 void glDeleteShader(GLuint shader) {
 }
+
+static PFNGLDELETETEXTURESPROC gl_87 = NULL;
 void glDeleteTextures(GLsizei n, const GLuint *textures) {
 }
+
+static PFNGLDEPTHFUNCPROC gl_88 = NULL;
 void glDepthFunc(GLenum func) {
 }
+
+static PFNGLDEPTHMASKPROC gl_89 = NULL;
 void glDepthMask(GLboolean flag) {
 }
+
+static PFNGLDEPTHRANGEPROC gl_90 = NULL;
 void glDepthRange(GLclampd nearVal, GLclampd farVal) {
 }
-void glDetachSahder(GLuint program, GLuint shader) {
+
+static PFNGLDETACHSHADERPROC gl_91 = NULL;
+void glDetachShader(GLuint program, GLuint shader) {
 }
+
+static PFNGLENABLEPROC gl_92 = NULL;
 void glEnable(GLenum cap) {
 }
+
+static PFNGLDISABLEPROC gl_93 = NULL;
 void glDisable(GLenum cap) {
 }
+
+static PFNGLENABLECLIENTSTATEPROC gl_94 = NULL;
 void glEnableClientState(GLenum cap) {
 }
+
+static PFNGLDISABLECLIENTSTATEPROC gl_95 = NULL;
 void glDisableClientState(GLenum cap) {
 }
+
+static PFNGLENABLEVERTEXATTRIBARRAYPROC gl_96 = NULL;
 void glEnableVertexAttribArray(GLuint index) {
 }
+
+static PFNGLDISABLEVERTEXATTRIBARRAYPROC gl_97 = NULL;
 void glDisableVertexAttribArray(GLuint index) {
 }
+
+static PFNGLDRAWARRAYSPROC gl_98 = NULL;
 void glDrawArrays(GLenum mode, GLint first, GLsizei count) {
 }
+
+static PFNGLDRAWBUFFERPROC gl_99 = NULL;
 void glDrawBuffer(GLenum mode) {
 }
+
+static PFNGLDRAWBUFFERSPROC gl_100 = NULL;
 void glDrawBuffers(GLsizei n, const GLenum *bufs) {
 }
+
+static PFNGLDRAWELEMENTSPROC gl_101 = NULL;
 void glDrawElements(GLenum mode, GLsizei count, GLenum type, const GLvoid *indices) {
 }
+
+static PFNGLDRAWPIXELSPROC gl_102 = NULL;
 void glDrawPixels(GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *data) {
 }
+
+static PFNGLDRAWRANGEELEMENTSPROC gl_103 = NULL;
 void glDrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices) {
 }
+
+static PFNGLEDGEFLAGPROC gl_104 = NULL;
 void glEdgeFlag(GLboolean flag) {
 }
+
+static PFNGLEDGEFLAGVPROC gl_105 = NULL;
 void glEdgeFlagv(const GLboolean *flag) {
 }
+
+static PFNGLEDGEFLAGPOINTERPROC gl_106 = NULL;
 void glEdgeFlagPointer(GLsizei stride, const GLvoid *pointer) {
 }
+
+static PFNGLENDLISTPROC gl_107 = NULL;
 void glEndList() {
 }
+
+static PFNGLEVALCOORD1FPROC gl_108 = NULL;
 void glEvalCoord1f(GLfloat u) {
 }
+
+static PFNGLEVALCOORD1DPROC gl_109 = NULL;
 void glEvalCoord1d(GLdouble u) {
 }
+
+static PFNGLEVALCOORD2FPROC gl_110 = NULL;
 void glEvalCoord2f(GLfloat u, GLfloat v) {
 }
+
+static PFNGLEVALCOORD2DPROC gl_111 = NULL;
 void glEvalCoord2d(GLdouble u, GLdouble v) {
 }
+
+static PFNGLEVALCOORD1FVPROC gl_112 = NULL;
 void glEvalCoord1fv(const GLfloat *u) {
 }
+
+static PFNGLEVALCOORD1DVPROC gl_113 = NULL;
 void glEvalCoord1dv(const GLdouble *u) {
 }
+
+static PFNGLEVALCOORD2FVPROC gl_114 = NULL;
 void glEvalCoord2fv(const GLfloat *u) {
 }
+
+static PFNGLEVALCOORD2DVPROC gl_115 = NULL;
 void glEvalCoord2dv(const GLdouble *u) {
 }
+
+static PFNGLEVALMESH1PROC gl_116 = NULL;
 void glEvalMesh1(GLenum mode, GLint i1, GLint i2) {
 }
+
+static PFNGLEVALMESH2PROC gl_117 = NULL;
 void glEvalMesh2(GLenum mode, GLint i1, GLint i2, GLint j1, GLint j2) {
 }
+
+static PFNGLEVALPOINT1PROC gl_118 = NULL;
 void glEvalPoint1(GLint i) {
 }
+
+static PFNGLEVALPOINT2PROC gl_119 = NULL;
 void glEvalPoint2(GLint i, GLint j) {
 }
+
+static PFNGLFEEDBACKBUFFERPROC gl_120 = NULL;
 void glFeedbackBuffer(GLsizei size, GLenum type, GLfloat *buffer) {
 }
+
+static PFNGLFINISHPROC gl_121 = NULL;
 void glFinish() {
 }
+
+static PFNGLFLUSHPROC gl_122 = NULL;
 void glFlush() {
 }
+
+static PFNGLFOGFPROC gl_123 = NULL;
 void glFogf(GLenum pname, GLfloat param) {
 }
+
+static PFNGLFOGIPROC gl_124 = NULL;
 void glFogi(GLenum pname, GLint param) {
 }
+
+static PFNGLFOGFVPROC gl_125 = NULL;
 void glFogfv(GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLFOGIVPROC gl_126 = NULL;
 void glFogiv(GLenum pname, const GLint *params) {
 }
+
+static PFNGLFOGCOORDDPROC gl_127 = NULL;
 void glFogCoordd(GLdouble coord) {
 }
+
+static PFNGLFOGCOORDFPROC gl_128 = NULL;
 void glFogCoordf(GLfloat coord) {
 }
+
+static PFNGLFOGCOORDDVPROC gl_129 = NULL;
 void glFogCoorddv(GLdouble *coord) {
 }
+
+static PFNGLFOGCOORDFVPROC  gl_130 = NULL;
 void glFogCoordfv(GLfloat *coord) {
 }
+
+static PFNGLFOGCOORDPOINTERPROC gl_131 = NULL;
 void glFogCoordPointer(GLenum type, GLsizei stride, GLvoid *pointer) {
 }
+
+static PFNGLFRONTFACEPROC gl_132 = NULL;
 void glFrontFace(GLenum mode) {
 }
+
+static PFNGLFRUSTUMPROC gl_133 = NULL;
 void glFrustum(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble nearVal, GLdouble farVal) {
 }
+
+static PFNGLGENBUFFERSPROC gl_134 = NULL;
 void glGenBuffers(GLsizei n, GLuint *buffers) {
 }
+
+static PFNGLGENLISTSPROC gl_135 = NULL;
 GLuint glGenLists(GLsizei range) {
 }
+
+static PFNGLGENQUERIESPROC gl_136 = NULL;
 void glGenQueries(GLsizei n, GLuint *ids) {
 }
+
+static PFNGLGENTEXTURESPROC gl_137 = NULL;
 void glGenTextures(GLsizei n, GLuint *textures) {
 }
+
+static PFNGLGETBOOLEANVPROC gl_138 = NULL;
 void glGetBooleanv(GLenum pname, GLboolean *params) {
 }
+
+static PFNGLGETDOUBLEVPROC gl_139 = NULL;
 void glGetDoublev(GLenum pname, GLdouble *params) {
 }
+
+static PFNGLGETFLOATVPROC gl_140 = NULL;
 void glGetFloatv(GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETINTEGERVPROC gl_141 = NULL;
 void glGetIntegerv(GLenum pname, GLint *params) {
 }
+
+static PFNGLGETACTIVEATTRIBPROC gl_142 = NULL;
 void glGetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name) {
 }
+
+static PFNGLGETACTIVEUNIFORMPROC gl_143 = NULL;
 void glGetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name) {
 }
+
+static PFNGLGETATTACHEDSHADERSPROC gl_144 = NULL;
 void glGetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders) {
 }
+
+static PFNGLATTRIBLOCATIONPROC gl_145 = NULL;
 GLint glAttribLocation(GLuint program, const GLchar *name) {
 }
+
+static PFNGLGETBUFFERPARAMETERIVPROC gl_146 = NULL;
 void glGetBufferParameteriv(GLenum target, GLenum value, GLint *data) {
 }
+
+static PFNGLGETBUFFERPOINTERVPROC gl_147 = NULL;
 void glGetBufferPointerv(GLenum target, GLenum pname, GLvoid **params) {
 }
+
+static PFNGLGETBUFFERSUBDATAPROC gl_148 = NULL;
 void glGetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, GLvoid *data) {
 }
+
+static PFNGLGETCLIPPLANEPROC gl_149 = NULL;
 void glGetClipPlane(GLenum plane, GLdouble *equation) {
 }
+
+static PFNGLGETCOMPRESSEDTEXIMAGEPROC gl_150 = NULL;
 void glGetCompressedTexImage(GLenum target, GLint lod, GLvoid *img) {
 }
+
+static PFNGLGETERRORPROC gl_151 = NULL;
 GLenum glGetError() {
 }
+
+static PFNGLGETLIGHTFVPROC gl_152 = NULL;
 void glGetLightfv(GLenum light, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETLIGHTIVPROC gl_153 = NULL;
 void glGetLightiv(GLenum light, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETMAPDVPROC gl_154 = NULL;
 void glGetMapdv(GLenum target, GLenum query, GLdouble *v) {
 }
+
+static PFNGLGETMAPFVPROC gl_155 = NULL;
 void glGetMapfv(GLenum target, GLenum query, GLfloat *v) {
 }
+
+static PFNGLGETMAPIVPROC gl_156 = NULL;
 void glGetMapiv(GLenum target, GLenum query, GLint *v) {
 }
+
+static PFNGLGETMATERIALFVPROC gl_157 = NULL;
 void glGetMaterialfv(GLenum face, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETMATERIALIVPROC gl_158 = NULL;
 void glGetMaterialiv(GLenum face, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETPIXELMAPFVPROC gl_159 = NULL;
 void glGetPixelMapfv(GLenum map, GLfloat *data) {
 }
+
+static PFNGLGETPIXELMAPUIVPROC gl_160 = NULL;
 void glGetPixelMapuiv(GLenum map, GLuint *data) {
 }
+
+static PFNGLGETPIXELMAPUSVPROC gl_161 = NULL;
 void glGetPixelMapusv(GLenum map, GLushort *data) {
 }
+
+static PFNGLGETPOINTERVPROC gl_162 = NULL;
 void glGetPointerv(GLenum pname, GLvoid **params) {
 }
+
+static PFNGLGETPOLYGONSTIPPLEPROC gl_163 = NULL;
 void glGetPolygonStipple(GLubyte *pattern) {
 }
+
+static PFNGLGETPROGRAMIVPROC gl_164 = NULL;
 void glGetProgramiv(GLuint program, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETPROGRAMINFOLOGPROC gl_165 = NULL;
 void glGetProgramInfoLog(GLuint program, GLsizei maxLength, GLsizei *length, GLchar *infoLog) {
 }
+
+static PFNGLGETQUERYOBJECTIVPROC gl_166 = NULL;
 void glGetQueryObjectiv(GLuint id, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETQUERYOBJECTUIVPROC gl_167 = NULL;
 void glGetQueryObjectuiv(GLuint id, GLenum pname, GLuint *params) {
 }
+
+static PFNGLGETQUERYIVPROC gl_168 = NULL;
 void glGetQueryiv(GLenum target, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETSHADERIVPROC gl_169 = NULL;
 void glGetShaderiv(GLuint shader, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETSHADERINFOLOGPROC gl_170 = NULL;
 void glGetShaderInfoLog(GLuint shader, GLsizei maxLength, GLsizei *length, GLchar *infoLog) {
 }
+
+static PFNGLGETSHADERSOURCEPROC gl_171 = NULL;
 void glGetShaderSource(GLuint shader, GLsizei bufSize, GLsizei *length, GLchar *source) {
 }
+
+static PFNGLGETSTRINGPROC gl_172 = NULL;
 const GLubyte *glGetString(GLenum name) {
 }
+
+static PFNGLGETTEXENVFVPROC gl_173 = NULL;
 void glGetTexEnvfv(GLenum target, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETTEXENVIVPROC gl_174 = NULL;
 void glGetTexEnviv(GLenum target, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETTEXGENDVPROC gl_175 = NULL;
 void glGetTexGendv(GLenum coord, GLenum pname, GLdouble *params) {
 }
+
+static PFNGLGETTEXGENFVPROC gl_176 = NULL;
 void glGetTexGenfv(GLenum coord, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETTEXGENIVPROC gl_177 = NULL;
 void glGetTexGeniv(GLenum coord, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETTEXIMAGEPROC gl_178 = NULL;
 void glGetTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLvoid *img) {
 }
+
+static PFNGLGETTEXLEVELPARAMETERFVPROC gl_179 = NULL;
 void glGetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETTEXLEVELPARAMETERIVPROC gl_180 = NULL;
 void glGetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETTEXPARAMETERIVPROC gl_181 = NULL;
 void glGetTexParameterfv(GLenum target, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETTEXPARAMETERIVPROC gl_182 = NULL;
 void glGetTexParameteriv(GLenum target, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETUNIFORMFVPROC gl_183 = NULL;
 void glGetUniformfv(GLuint program, GLint location, GLfloat *params) {
 }
+
+static PFNGLGETUNIFORMIVPROC gl_184 = NULL;
 void glGetUniformiv(GLuint program, GLint location, GLint *params) {
 }
+
+static PFNGLGETUNIFORMLOCATIONPROC gl_185 = NULL;
 void glGetUniformLocation(GLuint program, const GLchar *name) {
 }
+
+static PFNGLGETVERTEXATTRIBDVPROC gl_186 = NULL;
 void glGetVertexAttribdv(GLuint index, GLenum pname, GLdouble *params) {
 }
+
+static PFNGLGETVERTEXATTRIBFVPROC gl_187 = NULL;
 void glGetVertexAttribfv(GLuint index, GLenum pname, GLfloat *params) {
 }
+
+static PFNGLGETVERTEXATTRIBIVPROC gl_188 = NULL;
 void glGetVertexAttribiv(GLuint index, GLenum pname, GLint *params) {
 }
+
+static PFNGLGETVERTEXATTRIBPOINTERVPROC gl_189 = NULL;
 void glGetVertexAttribPointerv(GLuint index, GLenum pname, GLvoid **pointer) {
 }
+
+static PFNGLHINTPROC gl_190 = NULL;
 void glHint(GLenum target, GLenum mode) {
 }
+
+static PFNGLINDEXSPROC gl_191 = NULL;
 void glIndexs(GLshort c) {
 }
+
+static PFNGLINDEXIPROC gl_192 = NULL;
 void glIndexi(GLint c) {
 }
+
+static PFNGLINDEXFPROC gl_193 = NULL;
 void glIndexf(GLfloat c) {
 }
+
+static PFNGLINDEXDPROC gl_194 = NULL;
 void glIndexd(GLdouble c) {
 }
+
+static PFNGLINDEXUBPROC gl_195 = NULL;
 void glIndexub(GLubyte c) {
 }
+
+static PFNGLINDEXSVPROC gl_196 = NULL;
 void glIndexsv(const GLshort *c) {
 }
+
+static PFNGLINDEXIVPROC gl_197 = NULL;
 void glIndexiv(const GLint *c) {
 }
+
+static PFNGLINDEXFVPROC gl_198 = NULL;
 void glIndexfv(const GLfloat *c) {
 }
+
+static PFNGLINDEXDVPROC gl_199 = NULL;
 void glIndexdv(const GLdouble *c) {
 }
+
+static PFNGLINDEXUBVPROC gl_200 = NULL;
 void glIndexubv(const GLubyte *c) {
 }
+
+static PFNGLINDEXMASKPROC gl_201 = NULL;
 void glIndexMask(GLuint mask) {
 }
+
+static PFNGLINDEXPOINTERPROC gl_202 = NULL;
 void glIndexPointer(GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
+
+static PFNGLINITNAMESPROC gl_203 = NULL;
 void glInitNames() {
 }
+
+static PFNGLINTERLEAVEDARRAYSPROC gl_204 = NULL;
 void glInterleavedArrays(GLenum format, GLsizei stride, const GLvoid *pointer) {
 }
+
+static PFNGLISBUFFERPROC gl_205 = NULL;
 GLboolean glIsBuffer(GLuint buffer) {
 }
+
+static PFNGLISENABLEDPROC gl_206 = NULL;
 GLboolean glIsEnabled(GLenum cap) {
 }
+
+static PFNGLISLISTPROC gl_207 = NULL;
 GLboolean glIsList(GLuint list) {
 }
+
+static PFNGLISPROGRAMPROC gl_208 = NULL;
 GLboolean glIsProgram(GLuint program) {
 }
+
+static PFNGLISQUERYPROC gl_209 = NULL;
 GLboolean glIsQuery(GLuint id) {
 }
+
+static PFNGLISSHADERPROC gl_210 = NULL;
 GLboolean glIsShader(GLuint shader) {
 }
+
+static PFNGLISTEXTUREPROC gl_211 = NULL;
 GLboolean glIsTexture(GLuint texture) {
 }
+
+static PFNGLLIGHTFPROC gl_212 = NULL;
 void glLightf(GLenum light, GLenum pname, GLfloat param) {
 }
+
+static PFNGLLIGHTIPROC gl_213 = NULL;
 void glLighti(GLenum light, GLenum pname, GLint param) {
 }
+
+static PFNGLLIGHTFVPROC gl_214 = NULL;
 void glLightfv(GLenum light, GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLLIGHTIVPROC gl_215 = NULL;
 void glLightiv(GLenum light, GLenum pname, const GLint *params) {
 }
+
+static PFNGLLIGHTMODELFPROC gl_216 = NULL;
 void glLightModelf(GLenum pname, GLfloat param) {
 }
+
+static PFNGLLIGHTMODELIPROC gl_217 = NULL;
 void glLightModeli(GLenum pname, GLint param) {
 }
+
+static PFNGLLIGHTMODELFVPROC gl_218 = NULL;
 void glLightModelfv(GLenum pnanme, const GLfloat *params) {
 }
+
+static PFNGLLIGHTMODELIVPROC gl_219 = NULL;
 void glLightModeliv(GLenum pname, const GLint *params) {
 }
+
+static PFNGLLINESTIPPLEPROC gl_220 = NULL;
 void glLineStipple(GLint factor, GLushort pattern) {
 }
+
+static PFNGLLINEWIDTHPROC gl_221 = NULL;
 void glLineWidth(GLfloat width) {
 }
+
+static PFNGLLINKPROGRAMPROC gl_222 = NULL;
 void glLinkProgram(GLuint program) {
 }
+
+static PFNGLLISTBASEPROC gl_223 = NULL;
 void glListBase(GLuint base) {
 }
+
+static PFNGLLOADIDENTITYPROC gl_224 = NULL;
 void glLoadIdentity() {
 }
+
+static PFNGLLOADMATRIXDPROC gl_225 = NULL;
 void glLoadMatrixd(const GLdouble *m) {
 }
+
+static PFNGLLOADMATRIXFPROC gl_226 = NULL;
 void glLoadMatrixf(const GLfloat *m) {
 }
+
+static PFNGLLOADNAMEPROC gl_227 = NULL;
 void glLoadName(GLuint name) {
 }
+
+static PFNGLLOADTRANSPOSEMATRIXDPROC gl_228 = NULL;
 void glLoadTransposeMatrixd(const GLdouble *m) {
 }
+
+static PFNGLLOADTRANSPOSEMATRIXFPROC gl_229 = NULL;
 void glLoadTransposeMatrixf(const GLfloat *m) {
 }
+
+static PFNGLLOGICOPPROC gl_230 = NULL;
 void glLogicOp(GLenum opcode) {
 }
+
+static PFNGLMAP1FPROC gl_231 = NULL;
 void glMap1f(GLenum target, GLfloat u1, GLfloat u2, GLint stride, GLint order, const GLfloat *points) {
 }
+
+static PFNGLMAP1DPROC gl_232 = NULL;
 void glMap1d(GLenum target, GLdouble u1, GLdouble u2, GLint stride, GLint order, const GLdouble *points) {
 }
+
+static PFNGLMAP2FPROC gl_233 = NULL;
 void glMap2f(GLenum target, GLfloat u1, GLfloat u2, GLint ustride, GLint uorder, GLfloat v1, GLfloat v2, GLint vstride, GLint vorder, const GLfloat *points) {
 }
+
+static PFNGLMAP2DPROC gl_234 = NULL;
 void glMap2d(GLenum target, GLdouble u1, GLdouble u2, GLint ustride, GLint uorder, GLdouble v1, GLdouble v2, GLint vstride, GLint vorder, const GLdouble *points) {
 }
+
+static PFNGLMAPBUFFERPROC gl_235 = NULL;
 void* glMapBuffer(GLenum target, GLenum access) {
 }
+
+static PFNGLUNMAPBUFFERPROC gl_236 = NULL;
 GLboolean glUnmapBuffer(GLenum target) {
 }
+
+static PFNGLMAPGRID1DPROC gl_237 = NULL;
 void glMapGrid1d(GLint un, GLdouble u1, GLdouble u2) {
 }
+
+static PFNGLMAPGRID1FPROC gl_238 = NULL;
 void glMapGrid1f(GLint un, GLfloat u1, GLfloat u2) {
 }
+
+static PFNGLMAPGRID2DPROC gl_239 = NULL;
 void glMapGrid2d(GLint un, GLdouble u1, GLdouble u2, GLint vn, GLdouble v1, GLdouble v2) {
 }
+
+static PFNGLMAPGRID2FPROC gl_240 = NULL;
 void glMapGrid2f(GLint un, GLfloat u1, GLfloat u2, GLint vn, GLfloat v1, GLfloat v2) {
 }
+
+static PFNGLMATERIALFPROC gl_241 = NULL;
 void glMaterialf(GLenum face, GLenum pname, GLfloat param) {
 }
+
+static PFNGLMATERIALIPROC gl_242 = NULL;
 void glMateriali(GLenum face, GLenum pname, GLint param) {
 }
+
+static PFNGLMATERIALFVPROC gl_243 = NULL;
 void glMaterialfv(GLenum face, GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLMATERIALIVPROC gl_244 = NULL;
 void glMaterialiv(GLenum face, GLenum pname, const GLint *params) {
 }
+
+static PFNGLMATRIXMODEPROC gl_245 = NULL;
 void glMatrixMode(GLenum mode) {
 }
+
+static PFNGLMULTMATRIXDPROC gl_246 = NULL;
 void glMultMatrixd(const GLdouble *m) {
 }
+
+static PFNGLMULTMATRIXFPROC gl_247 = NULL;
 void glMultMatrixf(const GLfloat *m) {
 }
+
+static PFNGLMULTTRANSPOSEMATRIXDPROC gl_248 = NULL;
 void glMultTransposeMatrixd(const GLdouble *m) {
 }
+
+static PFNGLMULTTRANSPOSEMATRIXFPROC gl_249 = NULL;
 void glMultTransposeMatrixf(const GLfloat *m) {
 }
+
+static PFNGLMULTIDRAWARRAYSPROC gl_250 = NULL;
 void glMultiDrawArrays(GLenum mode, GLint *first, GLsizei *count, GLsizei primcount) {
 }
+
+static PFNGLMULTIDRAWELEMENTSPROC gl_251 = NULL;
 void glMultiDrawElements(GLenum mode, const GLsizei *count, GLenum type, const GLvoid **indices, GLsizei primcount) {
 }
+
+static PFNGLMULTITEXCOORD1SPROC gl_252 = NULL;
 void glMultiTexCoord1s(GLenum target, GLshort s) {
 }
+
+static PFNGLMULTITEXCOORD1IPROC gl_253 = NULL;
 void glMultiTexCoord1i(GLenum target, GLint s) {
 }
+
+static PFNGLMULTITEXCOORD1FPROC gl_254 = NULL;
 void glMultiTexCoord1f(GLenum target, GLfloat s) {
 }
+
+static PFNGLMULTITEXCOORD1DPROC gl_255 = NULL;
 void glMultiTexCoord1d(GLenum target, GLdouble s) {
 }
+
+static PFNGLMULTITEXCOORD2SPROC gl_256 = NULL;
 void glMultiTexCoord2s(GLenum target, GLshort s, GLshort t) {
 }
+
+static PFNGLMULTITEXCOORD2IPROC gl_257 = NULL;
 void glMultiTexCoord2i(GLenum target, GLint s, GLint t) {
 }
+
+static PFNGLMULTITEXCOORD2FPROC gl_258 = NULL;
 void glMultiTexCoord2f(GLenum target, GLfloat s, GLfloat t) {
 }
+
+static PFNGLMULTITEXCOORD2DPROC gl_259 = NULL;
 void glMultiTexCoord2d(GLenum target, GLdouble s, GLdouble t) {
 }
+
+static PFNGLMULTITEXCOORD3SPROC gl_260 = NULL;
 void glMultiTexCoord3s(GLenum target, GLshort s, GLshort t, GLshort r) {
 }
+
+static PFNGLMULTITEXCOORD3IPROC gl_261 = NULL;
 void glMultiTexCoord3i(GLenum target, GLint s, GLint t, GLint r) {
 }
+
+static PFNGLMULTITEXCOORD3FPROC gl_262 = NULL;
 void glMultiTexCoord3f(GLenum target, GLfloat s, GLfloat t, GLfloat r) {
 }
+
+static PFNGLMULTITEXCOORD3DPROC gl_263 = NULL;
 void glMultiTexCoord3d(GLenum target, GLdouble s, GLdouble t, GLdouble r) {
 }
+
+static PFNGLMULTITEXCOORD4SPROC gl_264 = NULL;
 void glMultiTexCoord4s(GLenum target, GLshort s, GLshort t, GLshort r, GLshort q) {
 }
+
+static PFNGLMULTITEXCOORD4IPROC gl_265 = NULL;
 void glMultiTexCoord4i(GLenum target, GLint s, GLint t, GLint r, GLint q) {
 }
+
+static PFNGLMULTITEXCOORD4FPROC gl_266 = NULL;
 void glMultiTexCoord4f(GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q) {
 }
+
+static PFNGLMULTITEXCOORD4DPROC gl_267 = NULL;
 void glMultiTexCoord4d(GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q) {
 }
+
+static PFNGLMULTITEXCOORD1SVPROC gl_268 = NULL;
 void glMultiTexCoord1sv(GLenum target, const GLshort *v) {
 }
+
+static PFNGLMULTITEXCOORD1IVPROC gl_269 = NULL;
 void glMultiTexCoord1iv(GLenum target, const GLint *v) {
 }
+
+static PFNGLMULTITEXCOORD1FVPROC gl_270 = NULL;
 void glMultiTexCoord1fv(GLenum target, const GLfloat *v) {
 }
+
+static PFNGLMULTITEXCOORD1DVPROC gl_271 = NULL;
 void glMultiTexCoord1dv(GLenum target, const GLdouble *v) {
 }
+
+static PFNGLMULTITEXCOORD2SVPROC gl_272 = NULL;
 void glMultiTexCoord2sv(GLenum target, const GLshort *v) {
 }
+
+static PFNGLMULTITEXCOORD2SVPROC gl_273 = NULL;
 void glMultiTexCoord2iv(GLenum target, const GLint *v) {
 }
+
+static PFNGLMULTITEXCOORD2FVPROC gl_274 = NULL;
 void glMultiTexCoord2fv(GLenum target, const GLfloat *v) {
 }
+
+static PFNGLMULTITEXCOORD2DVPROC gl_275 = NULL;
 void glMultiTexCoord2dv(GLenum target, const GLdouble *v) {
 }
+
+static PFNGLMULTITEXCOORD3SVPROC gl_276 = NULL;
 void glMultiTexCoord3sv(GLenum target, const GLshort *v) {
 }
+
+static PFNGLMULTITEXCOORD3IVPROC gl_277 = NULL;
 void glMultiTexCoord3iv(GLenum target, const GLint *v) {
 }
+
+static PFNGLMULTITEXCOORD3FVPROC gl_278 = NULL;
 void glMultiTexCoord3fv(GLenum target, const GLfloat *v) {
 }
+
+static PFNGLMULTITEXCOORD3DVPROC gl_279 = NULL;
 void glMultiTexCoord3dv(GLenum target, const GLdouble *v) {
 }
+
+static PFNGLMULTITEXCOORD4SVPROC gl_280 = NULL;
 void glMultiTexCoord4sv(GLenum target, const GLshort *v) {
 }
+
+static PFNGLMULTITEXCOORD4IVPROC gl_281 = NULL;
 void glMultiTexCoord4iv(GLenum target, const GLint *v) {
 }
+
+static PFNGLMULTITEXCOORD4FVPROC gl_282 = NULL;
 void glMultiTexCoord4fv(GLenum target, const GLfloat *v) {
 }
+
+static PFNGLMULTITEXCOORD4DVPROC gl_283 = NULL;
 void glMultiTexCoord4dv(GLenum target, const GLdouble *v) {
 }
+
+static PFNGLNEWLISTPROC gl_284 = NULL;
 void glNewList(GLuint list, GLenum mode) {
 }
+
+static PFNGLNORMAL3BPROC gl_285 = NULL;
 void glNormal3b(GLbyte nx, GLbyte ny, GLbyte nz) {
 }
+
+static PFNGLNORMAL3DPROC gl_286 = NULL;
 void glNormal3d(GLdouble nx, GLdouble ny, GLdouble nz) {
 }
+
+static PFNGLNORMAL3FPROC gl_287 = NULL;
 void glNormal3f(GLfloat nx, GLfloat ny, GLfloat nz) {
 }
+
+static PFNGLNORMAL3IPROC gl_288 = NULL;
 void glNormal3i(GLint nx, GLint ny, GLint nz) {
 }
+
+static PFNGLNORMAL3SPROC gl_289 = NULL;
 void glNormal3s(GLshort nx, GLshort ny, GLshort nz) {
 }
+
+static PFNGLNORMAL3BVPROC gl_290 = NULL;
 void glNormal3bv(const GLbyte *v) {
 }
+
+static PFNGLNORMAL3DVPROC gl_291 = NULL;
 void glNormal3dv(const GLdouble *v) {
 }
+
+static PFNGLNORMAL3FVPROC gl_292 = NULL;
 void glNormal3fv(const GLfloat *v) {
 }
+
+static PFNGLNORMAL3IVPROC gl_293 = NULL;
 void glNormal3iv(const GLint *v) {
 }
+
+static PFNGLNORMAL3SVPROC gl_294 = NULL;
 void glNormal3sv(const GLshort *v) {
 }
+
+static PFNGLNORMALPOINTERPROC gl_295 = NULL;
 void glNormalPointer(GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
+
+static PFNGLORTHOPROC gl_296 = NULL;
 void glOrtho(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble nearVal, GLdouble farVal) {
 }
+
+static PFNGLPASSTHROUGHPROC gl_297 = NULL;
 void glPassThrough(GLfloat token) {
 }
+
+static PFNGLPIXELMAPFVPROC gl_298 = NULL;
 void glPixelMapfv(GLenum map, GLsizei mapsize, const GLfloat *values) {
 }
+
+static PFNGLPIXELMAPUIVPROC gl_299 = NULL;
 void glPixelMapuiv(GLenum map, GLsizei mapsize, const GLuint *values) {
 }
+
+static PFNGLPIXELMAPUSVPROC gl_300 = NULL;
 void glPixelMapusv(GLenum map, GLsizei mapsize, const GLushort *values) {
 }
+
+static PFNGLPIXELSTOREFPROC gl_301 = NULL;
 void glPixelStoref(GLenum pname, GLfloat param) {
 }
+
+static PFNGLPIXELSTOREIPROC gl_302 = NULL;
 void glPixelStorei(GLenum pname, GLint param) {
 }
+
+static PFNGLPIXELTRANSFERFPROC gl_303 = NULL;
 void glPixelTransferf(GLenum pname, GLfloat param) {
 }
+
+static PFNGLPIXELTRANSFERIPROC gl_304 = NULL;
 void glPixelTransferi(GLenum pname, GLint param) {
 }
+
+static PFNGLPIXELZOOMPROC gl_305 = NULL;
 void glPixelZoom(GLfloat xfactor, GLfloat yfactor) {
 }
+
+static PFNGLPOINTPARAMETERFPROC gl_306 = NULL;
 void glPointParameterf(GLenum pname, GLfloat param) {
 }
+
+static PFNGLPOINTPARAMETERIPROC gl_307 = NULL;
 void glPointParameteri(GLenum pname, GLint param) {
 }
+
+static PFNGLPOINTPARAMETERFVPROC gl_308 = NULL;
 void glPointParameterfv(GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLPOINTPARAMETERIVPROC gl_309 = NULL;
 void glPointParameteriv(GLenum pname, const GLint *params) {
 }
+
+static PFNGLPOINTSIZEPROC gl_310 = NULL;
 void glPointSize(GLfloat size) {
 }
+
+static PFNGLPOLYGONMODEPROC gl_311 = NULL;
 void glPolygonMode(GLenum face, GLenum mode) {
 }
+
+static PFNGLPOLYGONOFFSETPROC gl_312 = NULL;
 void glPolygonOffset(GLfloat factor, GLfloat units) {
 }
+
+static PFNGLPOLYGONSTIPPLEPROC gl_313 = NULL;
 void glPolygonStipple(const GLubyte *pattern) {
 }
+
+static PFNGLPUSHATTRIBPROC gl_314 = NULL;
 void glPushAttrib(GLbitfield mask) {
 }
+
+static PFNGLPOPATTRIBPROC gl_315 = NULL;
 void glPopAttrib() {
 }
+
+static PFNGLPUSHCLIENTATTRIBPROC gl_316 = NULL;
 void glPushClientAttrib(GLbitfield mask) {
 }
+
+static PFNGLPOPCLIENTATTRIBPROC gl_317 = NULL;
 void glPopClientAttrib() {
 }
+
+static PFNGLPUSHMATRIXPROC gl_318 = NULL;
 void glPushMatrix() {
 }
+
+static PFNGLPOPMATRIXPROC gl_319 = NULL;
 void glPopMatrix() {
 }
+
+static PFNGLPUSHNAMEPROC gl_320 = NULL;
 void glPushName(GLuint name) {
 }
+
+static PFNGLPOPNAMEPROC gl_321 = NULL;
 void glPopName() {
 }
+
+static PFNGLPRIORITIZETEXTURESPROC gl_322 = NULL;
 void glPrioritizeTextures(GLsizei n, const GLuint *textures, const GLclampf *priorities) {
 }
+
+static PFNGLRASTERPOS2SPROC gl_323 = NULL;
 void glRasterPos2s(GLshort x, GLshort y) {
 }
+
+static PFNGLRASTERPOS2IPROC gl_324 = NULL;
 void glRasterPos2i(GLint x, GLint y) {
 }
+
+static PFNGLRASTERPOS2FPROC gl_325 = NULL;
 void glRasterPos2f(GLfloat x, GLfloat y) {
 }
+
+static PFNGLRASTERPOS2DPROC gl_326 = NULL;
 void glRasterPos2d(GLdouble x, GLdouble y) {
 }
+
+static PFNGLRASTERPOS3SPROC gl_327 = NULL;
 void glRasterPos3s(GLshort x, GLshort y, GLshort z) {
 }
+
+static PFNGLRASTERPOS3IPROC gl_328 = NULL;
 void glRasterPos3i(GLint x, GLint y, GLint z) {
 }
+
+static PFNGLRASTERPOS3FPROC gl_329 = NULL;
 void glRasterPos3f(GLfloat x, GLfloat y, GLfloat z) {
 }
+
+static PFNGLRASTERPOS3DPROC gl_330 = NULL;
 void glRasterPos3d(GLdouble x, GLdouble y, GLdouble z) {
 }
+
+static PFNGLRASTERPOS4SPROC gl_331 = NULL;
 void glRasterPos4s(GLshort x, GLshort y, GLshort z, GLshort w) {
 }
+
+static PFNGLRASTERPOS4IPROC gl_332 = NULL;
 void glRasterPos4i(GLint x, GLint y, GLint z, GLint w) {
 }
+
+static PFNGLRASTERPOS4FPROC gl_333 = NULL;
 void glRasterPos4f(GLfloat x, GLfloat y, GLfloat z, GLfloat w) {
 }
+
+static PFNGLRASTERPOS4DPROC gl_334 = NULL;
 void glRasterPos4d(GLdouble x, GLdouble y, GLdouble z, GLdouble w) {
 }
+
+static PFNGLRASTERPOS2SVPROC gl_335 = NULL;
 void glRasterPos2sv(const GLshort *v) {
 }
+
+static PFNGLRASTERPOS2IVPROC gl_336 = NULL;
 void glRasterPos2iv(const GLint *v) {
 }
+
+static PFNGLRASTERPOS2FVPROC gl_337 = NULL;
 void glRasterPos2fv(const GLfloat *v) {
 }
+
+static PFNGLRASTERPOS2DVPROC gl_338 = NULL;
 void glRasterPos2dv(const GLdouble *v) {
 }
+
+static PFNGLRASTERPOS3SVPROC gl_339 = NULL;
 void glRasterPos3sv(const GLshort *v) {
 }
+
+static PFNGLRASTERPOS3IVPROC gl_340 = NULL;
 void glRasterPos3iv(const GLint *v) {
 }
+
+static PFNGLRASTERPOS3FVPROC gl_341 = NULL;
 void glRasterPos3fv(const GLfloat *v) {
 }
+
+static PFNGLRASTERPOS3DVPROC gl_342 = NULL;
 void glRasterPos3dv(const GLdouble *v) {
 }
+
+static PFNGLRASTERPOS4SVPROC gl_343 = NULL;
 void glRasterPos4sv(const GLshort *v) {
 }
+
+static PFNGLRASTERPOS4IVPROC gl_344 = NULL;
 void glRasterPos4iv(const GLint *v) {
 }
+
+static PFNGLRASTERPOS4FVPROC gl_345 = NULL;
 void glRasterPos4fv(const GLfloat *v) {
 }
+
+static PFNGLRASTERPOS4DVPROC gl_346 = NULL;
 void glRasterPos4dv(const GLdouble *v) {
 }
+
+static PFNGLREADBUFFERPROC gl_347 = NULL;
 void glReadBuffer(GLenum mode) {
 }
+
+static PFNGLREADPIXELSPROC gl_348 = NULL;
 void glReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid *data) {
 }
+
+static PFNGLRECTDPROC gl_349 = NULL;
 void glRectd(GLdouble x1, GLdouble y1, GLdouble x2, GLdouble y2) {
 }
+
+static PFNGLRECTFPROC gl_350 = NULL;
 void glRectf(GLfloat x1, GLfloat y1, GLfloat x2, GLfloat y2) {
 }
+
+static PFNGLRECTIPROC gl_351 = NULL;
 void glRecti(GLint x1, GLint y1, GLint x2, GLint y2) {
 }
+
+static PFNGLRECTSPROC gl_352 = NULL;
 void glRects(GLshort x1, GLshort y1, GLshort x2, GLshort y2) {
 }
+
+static PFNGLRECTDVPROC gl_353 = NULL;
 void glRectdv(const GLdouble *v1, const GLdouble* v2) {
 }
+
+static PFNGLRECTFVPROC gl_354 = NULL;
 void glRectfv(const GLfloat *v1, const GLfloat *v2) {
 }
+
+static PFNGLRECTIVPROC gl_355 = NULL;
 void glRectiv(const GLint *v1, const GLint *v2) {
 }
+
+static PFNGLRECTIVPROC gl_356 = NULL;
 void glRectsv(const GLshort *v1, const GLshort *v2) {
 }
+
+static PFNGLRENDERMODEPROC gl_357 = NULL;
 GLint glRenderMode(GLenum mode) {
 }
+
+static PFNGLROTATEDPROC gl_358 = NULL;
 void glRotated(GLdouble angle, GLdouble x, GLdouble y, GLdouble z) {
 }
+
+static PFNGLROTATEFPROC gl_359 = NULL;
 void glRotatef(GLfloat angle, GLfloat x, GLfloat y, GLfloat z) {
 }
+
+static PFNGLSAMPLECOVERAGEPROC gl_360 = NULL;
 void glSampleCoverage(GLclampf value, GLboolean invert) {
 }
+
+static PFNGLSCALEDPROC gl_361 = NULL;
 void glScaled(GLdouble x, GLdouble y, GLdouble z) {
 }
+
+static PFNGLSCALEFPROC gl_362 = NULL;
 void glScalef(GLfloat x, GLfloat y, GLfloat z) {
 }
+
+static PFNGLSCISSORPROC gl_363 = NULL;
 void glScissor(GLint x, GLint y, GLsizei width, GLsizei height) {
 }
+
+static PFNGLSECONDARYCOLOR3BPROC gl_364 = NULL;
 void glSecondaryColor3b(GLbyte red, GLbyte green, GLbyte blue) {
 }
+
+static PFNGLSECONDARYCOLOR3SPROC gl_365 = NULL;
 void glSecondaryColor3s(GLshort red, GLshort green, GLshort blue) {
 }
+
+static PFNGLSECONDARYCOLOR3IPROC gl_366 = NULL;
 void glSecondaryColor3i(GLint red, GLint green, GLint blue) {
 }
+
+static PFNGLSECONDARYCOLOR3FPROC gl_367 = NULL;
 void glSecondaryColor3f(GLfloat red, GLfloat green, GLfloat blue) {
 }
+
+static PFNGLSECONDARYCOLOR3DPROC gl_368 = NULL;
 void glSecondaryColor3d(GLdouble red, GLdouble green, GLdouble blue) {
 }
+
+static PFNGLSECONDARYCOLOR3UBPROC gl_369 = NULL;
 void glSecondaryColor3ub(GLubyte red, GLubyte green, GLubyte blue) {
 }
+
+static PFNGLSECONDARYCOLOR3USPROC gl_370 = NULL;
 void glSecondaryColor3us(GLushort red, GLushort green, GLushort blue) {
 }
+
+static PFNGLSECONDARYCOLOR3UIPROC gl_371 = NULL;
 void glSecondaryColor3ui(GLuint red, GLuint green, GLuint blue) {
 }
+
+static PFNGLSECONDARYCOLOR3BVPROC gl_372 = NULL;
 void glSecondaryColor3bv(const GLbyte *v) {
 }
+
+static PFNGLSECONDARYCOLOR3SVPROC gl_373 = NULL;
 void glSecondaryColor3sv(const GLshort *v) {
 }
+
+static PFNGLSECONDARYCOLOR3IVPROC gl_374 = NULL;
 void glSecondaryColor3iv(const GLint *v) {
 }
+
+static PFNGLSECONDARYCOLOR3FVPROC gl_375 = NULL;
 void glSecondaryColor3fv(const GLfloat *v) {
 }
+
+static PFNGLSECONDARYCOLOR3DVPROC gl_376 = NULL;
 void glSecondaryColor3dv(const GLdouble *v) {
 }
+
+static PFNGLSECONDARYCOLOR3UBVPROC gl_377 = NULL;
 void glSecondaryColor3ubv(const GLubyte *v) {
 }
+
+static PFNGLSECONDARYCOLOR3USVPROC gl_378 = NULL;
 void glSecondaryColor3usv(const GLushort *v) {
 }
+
+static PFNGLSECONDARYCOLOR3UIVPROC gl_379 = NULL;
 void glSecondaryColor3uiv(const GLuint *v) {
 }
+
+static PFNGLSECONDARYCOLORPOINTERPROC gl_380 = NULL;
 void glSecondaryColorPointer(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
+
+static PFNGLSELECTBUFFERPROC gl_381 = NULL;
 void glSelectBuffer(GLsizei size, GLuint *buffer) {
 }
+
+static PFNGLSHADEMODELPROC gl_382 = NULL;
 void glShadeModel(GLenum mode) {
 }
+
+static PFNGLSHADERSOURCEPROC gl_383 = NULL;
 void glShaderSource(GLuint shader, GLsizei count, const GLchar **string, const GLint *length) {
 }
+
+static PFNGLSTENCILFUNCPROC gl_384 = NULL;
 void glStencilFunc(GLenum func, GLint ref, GLuint mask) {
 }
+
+static PFNGLSTENCILFUNCSEPARATEPROC gl_385 = NULL;
 void glStencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask) {
 }
+
+static PFNGLSTENCILMASKPROC gl_386 = NULL;
 void glStencilMask(GLuint mask) {
 }
+
+static PFNGLSTENCILMASKSEPARATEPROC gl_387 = NULL;
 void glStencilMaskSeparate(GLenum face, GLuint mask) {
 }
+
+static PFNGLSTENCILOPPROC gl_388 = NULL;
 void glStencilOp(GLenum sfail, GLenum dpfail, GLenum dppass) {
 }
+
+static PFNGLSTENCILOPSEPARATEPROC gl_389 = NULL;
 void glStencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass) {
 }
+
+static PFNGLTEXCOORD1SPROC gl_390 = NULL;
 void glTexCoord1s(GLshort s) {
 }
+
+static PFNGLTEXCOORD1IPROC gl_391 = NULL;
 void glTexCoord1i(GLint s) {
 }
+
+static PFNGLTEXCOORD1FPROC gl_392 = NULL;
 void glTexCoord1f(GLfloat s) {
 }
+
+static PFNGLTEXCOORD1DPROC gl_393 = NULL;
 void glTexCoord1d(GLdouble s) {
 }
+
+static PFNGLTEXCOORD2SPROC gl_394 = NULL;
 void glTexCoord2s(GLshort s, GLshort t) {
 }
+
+static PFNGLTEXCOORD2IPROC gl_395 = NULL;
 void glTexCoord2i(GLint s, GLint t) {
 }
+
+static PFNGLTEXCOORD2FPROC gl_396 = NULL;
 void glTexCoord2f(GLfloat s, GLfloat t) {
 }
+
+static PFNGLTEXCOORD2DPROC gl_397 = NULL;
 void glTexCoord2d(GLdouble s, GLdouble t) {
 }
+
+static PFNGLTEXCOORD3SPROC gl_398 = NULL;
 void glTexCoord3s(GLshort s, GLshort t, GLshort r) {
 }
+
+static PFNGLTEXCOORD3IPROC gl_399 = NULL;
 void glTexCoord3i(GLint s, GLint t, GLint r) {
 }
+
+static PFNGLTEXCOORD3FPROC gl_400 = NULL;
 void glTexCoord3f(GLfloat s, GLfloat t, GLfloat r) {
 }
+
+static PFNGLTEXCOORD3DPROC gl_401 = NULL;
 void glTexCoord3d(GLdouble s, GLdouble t, GLdouble r) {
 }
+
+static PFNGLTEXCOORD4SPROC gl_402 = NULL;
 void glTexCoord4s(GLshort s, GLshort y, GLshort r, GLshort q) {
 }
+
+static PFNGLTEXCOORD4IPROC gl_403 = NULL;
 void glTexCoord4i(GLint s, GLint t, GLint r, GLint q) {
 }
+
+static PFNGLTEXCOORD4FPROC gl_404 = NULL;
 void glTexCoord4f(GLfloat s, GLfloat t, GLfloat r, GLfloat q) {
 }
+
+static PFNGLTEXCOORD4DPROC gl_405 = NULL;
 void glTexCoord4d(GLdouble s, GLdouble t, GLdouble r, GLdouble q) {
 }
+
+static PFNGLTEXCOORD1SVPROC gl_406 = NULL;
 void glTexCoord1sv(const GLshort *v) {
 }
+
+static PFNGLTEXCOORD1IVPROC gl_407 = NULL;
 void glTexCoord1iv(const GLint *v) {
 }
+
+static PFNGLTEXCOORD1FVPROC gl_408 = NULL;
 void glTexCoord1fv(const GLfloat *v) {
 }
+
+static PFNGLTEXCOORD1DVPROC gl_409 = NULL;
 void glTexCoord1dv(const GLdouble *v) {
 }
+
+static PFNGLTEXCOORD2SVPROC gl_410 = NULL;
 void glTexCoord2sv(const GLshort *v) {
 }
+
+static PFNGLTEXCOORD2IVPROC gl_411 = NULL;
 void glTexCoord2iv(const GLint *v) {
 }
+
+static PFNGLTEXCOORD2FVPROC gl_412 = NULL;
 void glTexCoord2fv(const GLfloat *v) {
 }
+
+static PFNGLTEXCOORD2DVPROC gl_413 = NULL;
 void glTexCoord2dv(const GLdouble *v) {
 }
+
+static PFNGLTEXCOORD3SVPROC gl_414 = NULL;
 void glTexCoord3sv(const GLshort *v) {
 }
+
+static PFNGLTEXCOORD3IVPROC gl_415 = NULL;
 void glTexCoord3iv(const GLint *v) {
 }
+
+static PFNGLTEXCOORD3FVPROC gl_416 = NULL;
 void glTexCoord3fv(const GLfloat *v) {
 }
+
+static PFNGLTEXCOORD3DVPROC gl_417 = NULL;
 void glTexCoord3dv(const GLdouble *v) {
 }
 void glTexCoord4sv(const GLshort *v) {

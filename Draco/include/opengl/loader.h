@@ -121,7 +121,7 @@ void glDeleteTextures(GLsizei n, const GLuint *textures);
 void glDepthFunc(GLenum func);
 void glDepthMask(GLboolean flag);
 void glDepthRange(GLclampd nearVal, GLclampd farVal);
-void glDetachSahder(GLuint program, GLuint shader);
+void glDetachShader(GLuint program, GLuint shader);
 void glEnable(GLenum cap);
 void glDisable(GLenum cap);
 void glEnableClientState(GLenum cap);
