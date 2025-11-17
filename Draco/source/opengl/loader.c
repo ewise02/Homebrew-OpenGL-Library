@@ -1684,68 +1684,132 @@ void glTexCoord3fv(const GLfloat *v) {
 static PFNGLTEXCOORD3DVPROC gl_417 = NULL;
 void glTexCoord3dv(const GLdouble *v) {
 }
+
+static PFNGLTEXCOORD4SVPROC gl_418 = NULL;
 void glTexCoord4sv(const GLshort *v) {
 }
+
+static PFNGLTEXCOORD4IVPROC gl_419 = NULL;
 void glTexCoord4iv(const GLint *v) {
 }
+
+static PFNGLTEXCOORD4FVPROC gl_420 = NULL;
 void glTexCoord4fv(const GLfloat *v) {
 }
+
+static PFNGLTEXCOORD4DVPROC gl_421 = NULL;
 void gltexCoord4dv(const GLdouble *v) {
 }
+
+static PFNGLTEXCOORDPOINTERPROC gl_422 = NULL;
 void glTexCoordPointer(GLint size, GLenum type, GLsizei stride, const GLvoid *pointer) {
 }
+
+static PFNGLTEXENVFPROC gl_423 = NULL;
 void glTexEnvf(GLenum target, GLenum pname, GLfloat param) {
 }
+
+static PFNGLTEXENVIPROC gl_424 = NULL;
 void glTexEnvi(GLenum target, GLenum pname, GLint param) {
 }
+
+static PFNGLTEXENVFVPROC gl_425 = NULL;
 void glTexEnvfv(GLenum target, GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLTEXENVIVPROC gl_426 = NULL;
 void glTexEnviv(GLenum target, GLenum pname, const GLint *params) {
 }
+
+static PFNGLTEXGENIPROC gl_427 = NULL;
 void glTexGeni(GLenum coord, GLenum pname, GLint param) {
 }
+
+static PFNGLTEXGENFPROC gl_428 = NULL;
 void glTexGenf(GLenum coord, GLenum pname, GLfloat param) {
 }
+
+static PFNGLTEXGENDPROC gl_429 = NULL;
 void glTexGend(GLenum coord, GLenum pname, GLdouble param) {
 }
+
+static PFNGLTEXGENIVPROC gl_430 = NULL;
 void glTexGeniv(GLenum coord, GLenum pname, const GLint *params) {
 }
+
+static PFNGLTEXGENFVPROC gl_431 = NULL;
 void glTexGenfv(GLenum coord, GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLTEXGENDVPROC gl_432 = NULL;
 void glTexGendv(GLenum coord, GLenum pname, const GLdouble *params) {
 }
-void glTexImage1d(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *data) {
+
+static PFNGLTEXIMAGE1DPROC gl_433 = NULL;
+void glTexImage1D(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLint border, GLenum format, GLenum type, const GLvoid *data) {
 }
-void glTexImage2d(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *data) {
+
+static PFNGLTEXIMAGE2DPROC gl_434 = NULL;
+void glTexImage2D(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *data) {
 }
-void glTexImage3d(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *data) {
+
+static PFNGLTEXIMAGE3DPROC gl_435 = NULL;
+void glTexImage3D(GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *data) {
 }
+
+static PFNGLTEXPARAMETERFPROC gl_436 = NULL;
 void glTexParameterf(GLenum target, GLenum pname, GLfloat param) {
 }
+
+static PFNGLTEXPARAMETERIPROC gl_437 = NULL;
 void glTexParameteri(GLenum target, GLenum pname, GLint param) {
 }
+
+static PFNGLTEXPARAMETERFVPROC gl_438 = NULL;
 void glTexParameterfv(GLenum target, GLenum pname, const GLfloat *params) {
 }
+
+static PFNGLTEXPARAMETERIVPROC gl_439 = NULL;
 void glTexParameteriv(GLenum target, GLenum pname, const GLint *params) {
 }
-void glTexSubImage1d(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *data) {
+
+static PFNGLTEXSUBIMAGE1DPROC gl_440 = NULL;
+void glTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const GLvoid *data) {
 }
-void glTexSubImage2d(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *data) {
+
+static PFNGLTEXSUBIMAGE2DPROC gl_441 = NULL;
+void glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *data) {
 }
-void glTexSubImage3d(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *data) {
+
+static PFNGLTEXSUBIMAGE3DPROC gl_442 = NULL;
+void glTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *data) {
 }
+
+static PFNGLTRANSLATEDPROC gl_443 = NULL;
 void glTranslated(GLdouble x, GLdouble y, GLdouble z) {
 }
+
+static PFNGLTRANSLATEFPROC gl_444 = NULL;
 void glTranslatef(GLfloat x, GLfloat y, GLfloat z) {
 }
+
+static PFNGLUNIFORM1FPROC gl_445 = NULL;
 void glUniform1f(GLint location, GLfloat v0) {
 }
+
+static PFNGLUNIFORM2FPROC gl_446 = NULL;
 void glUniform2f(GLint location, GLfloat v0, GLfloat v1) {
 }
+
+static PFNGLUNIFORM3FPROC gl_447 = NULL;
 void glUniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2) {
 }
+
+static PFNGLUNIFORM4FPROC gl_448 = NULL;
 void glUniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3) {
 }
+
+static PFNGLUNIFORM1IPROC gl_449 = NULL;
 void glUniform1i(GLint location, GLint v0) {
 }
 void glUniform2i(GLint location, GLint v0, GLint v1) {
